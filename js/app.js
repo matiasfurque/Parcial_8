@@ -14,7 +14,7 @@ const articles = [
     id: 2,
     title: 'Volkswagen Gol Trend',
     excerpt: 'Compacto confiable y económico, ideal para ciudad.',
-    img: '/img/GolTrend.jpeg',
+    img: '/img/GolTrend.jpg',
     category: 'Hatchback',
     content: `
       El Gol Trend combina economía y practicidad.
@@ -107,6 +107,17 @@ const articles = [
     content: `
       La Gilera Smash es una moto ligera, económica y fácil de mantener.
       Ideal para transporte urbano y uso diario, es una de las más populares en su segmento.
+    `,
+  },
+  {
+    id: 11,
+    title: 'Chevrolet Agile',
+    excerpt: 'Hatchback compacto, práctico y económico.',
+    img: '/img/agile.jpg',
+    category: 'Hatchback',
+    content: `
+      El Chevrolet Agile es un auto compacto diseñado para la vida urbana.
+      Ofrece buen espacio interior y eficiencia en el consumo de combustible.
     `,
   },
 ];
