@@ -122,7 +122,6 @@ body {
   color: var(--accent);
 }
 
-/* Article detail */
 .single-layout {
   display: grid;
   grid-template-columns: 1fr 320px;
@@ -139,7 +138,6 @@ body {
   margin-bottom: 8px;
 }
 
-/* Contact */
 .contact-section form {
   display: flex;
   flex-direction: column;
@@ -164,7 +162,6 @@ body {
   color: green;
 }
 
-/* Footer */
 .site-footer {
   background: #3b3737be;
   padding: 16px 0;
