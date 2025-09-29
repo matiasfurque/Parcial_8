@@ -1,6 +1,3 @@
-// =============================
-// Datos simulados: Vehículos
-// =============================
 const articles = [
   {
     id: 1,
@@ -113,10 +110,6 @@ const articles = [
     `,
   },
 ];
-
-// =============================
-// Renderiza listado en index.html
-// =============================
 function renderArticles() {
   const list = document.getElementById('articles-list');
   if (!list) return;
@@ -129,23 +122,15 @@ function renderArticles() {
       <div class="card-body">
         <h3>${a.title}</h3>
         <p>${a.excerpt}</p>
-        <a class="read-more" href="article.html?id=${a.id}">Leer más →</a>
+        <a class="read-more" href="article.html?id=${a.id}">Leer más...</a>
       </div>`;
     list.appendChild(card);
   });
 }
-
-// =============================
-// Obtiene parámetros de URL
-// =============================
 function getQueryParam(name) {
   const url = new URL(window.location.href);
   return url.searchParams.get(name);
 }
-
-// =============================
-// Renderiza detalle de artículo en article.html
-// =============================
 function renderArticleDetail() {
   const detail = document.getElementById('article-detail');
   if (!detail) return;
@@ -162,7 +147,6 @@ function renderArticleDetail() {
     <div class="article-body">${article.content}</div>
   `;
 
-  // relacionados
   const related = document.getElementById('related-list');
   if (related) {
     related.innerHTML = '';
@@ -175,10 +159,6 @@ function renderArticleDetail() {
       });
   }
 }
-
-// =============================
-// Validación simple del formulario en contact.html
-// =============================
 function setupContactForm() {
   const form = document.getElementById('contact-form');
   if (!form) return;
@@ -198,10 +178,6 @@ function setupContactForm() {
     form.reset();
   });
 }
-
-// =============================
-// Menu toggle para móviles
-// =============================
 function setupMenuToggle() {
   const btn = document.getElementById('menu-toggle');
   const nav = document.getElementById('main-nav');
@@ -212,10 +188,6 @@ function setupMenuToggle() {
     nav.classList.toggle('open');
   });
 }
-
-// =============================
-// Inicialización
-// =============================
 document.addEventListener('DOMContentLoaded', () => {
   renderArticles();
   renderArticleDetail();
