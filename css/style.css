@@ -57,7 +57,7 @@ body {
   padding: 24px 0;
 }
 .sidebar .widget {
-  background: #fafafa;
+  background: #f5f3f3;
   padding: 12px;
   border-radius: 8px;
   margin-bottom: 12px;
@@ -88,7 +88,7 @@ body {
   margin-top: 16px;
 }
 .card {
-  background: white;
+  background: rgb(255, 255, 255);
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
@@ -163,7 +163,7 @@ body {
 }
 
 .site-footer {
-  background: #3b3737be;
+  background: #706a6abe;
   padding: 16px 0;
   margin-top: 32px;
 }

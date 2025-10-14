@@ -180,7 +180,7 @@ function setupContactForm() {
     const email = form.email.value.trim();
     const message = form.message.value.trim();
     if (!name || !email || !message) {
-      feedback.style.color = 'crimson';
+      feedback.style.color = 'red';
       feedback.textContent = 'Por favor completá todos los campos antes de enviar.';
       return;
     }
