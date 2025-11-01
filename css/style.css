@@ -195,8 +195,7 @@ a {
 .carousel {
     position: relative;
     width: 100%;
-    max-width: 800px; /* Reduced from --max-width */
-    margin: 20px auto; /* Added margin */
+    margin: 20px auto; 
     overflow: hidden;
     border-radius: 8px;
     height: 120px; /* Added height */
@@ -232,4 +231,28 @@ a {
     object-fit: contain;
     display: block;
     margin: 0 auto;
+}
+
+/* Related articles styles */
+#related-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#related-list li a {
+  display: block;
+  padding: 8px 12px;
+  background: #f5f3f3;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.2s;
+}
+
+#related-list li a:hover {
+  background: #e0e0e0;
 }
