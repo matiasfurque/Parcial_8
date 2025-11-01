@@ -190,3 +190,46 @@ body {
 a {
   transition: color 0.15s;
 }
+
+/* Carousel styles */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Reduced from --max-width */
+    margin: 20px auto; /* Added margin */
+    overflow: hidden;
+    border-radius: 8px;
+    height: 120px; /* Added height */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.carousel-inner {
+    display: flex;
+    width: 200%; /* 16 items * 12.5% width */
+    animation: scroll 10s linear infinite;
+}
+
+.carousel-item {
+    min-width: 12.5%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-item img {
+    max-height: 100px; /* Reduced height */
+    max-width: 150px; /* Added max-width */
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
